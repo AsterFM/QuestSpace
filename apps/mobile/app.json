@@ -5,8 +5,19 @@
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "ios": { "supportsTablet": true, "bundleIdentifier": "dev.questspace.app" },
-    "android": { "package": "dev.questspace.app" },
-    "web": { "bundler": "metro", "name": "QuestSpace" }
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.questspace.app"
+    },
+    "android": {
+      "package": "dev.questspace.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "QuestSpace"
+    },
+    "plugins": [
+      "expo-status-bar"
+    ]
   }
 }

@@ -75,7 +75,7 @@ E2E использует системный `/usr/bin/chromium`, если он �
 ## Структура
 
 - `apps/web` — React, Vite и React Flow: каталог, чат, карта диалогов.
-- `apps/mobile` — React Native и Expo SDK 55: каталог и чат для Android/iOS/web.
+- `apps/mobile` — React Native и Expo SDK 57: каталог и чат для Android/iOS/web.
 - `apps/api` — Express и встроенный в Node.js SQLite: черновики и опубликованные снимки.
 - `packages/story` — общая схема Zod, валидация графа и проигрыватель истории.
 - `tests` — браузерные сценарии Playwright.

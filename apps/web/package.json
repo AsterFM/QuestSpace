@@ -12,8 +12,8 @@
     "@questspace/story": "*",
     "@xyflow/react": "12.12.0",
     "lucide-react": "^0.468.0",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^5.0.0",
