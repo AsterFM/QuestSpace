@@ -1,0 +1,31 @@
+{
+  "name": "questspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n api,web \"npm run dev -w @questspace/api\" \"npm run dev -w @questspace/web\"",
+    "dev:mobile": "npm run start -w @questspace/mobile",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "build": "npm run build -w @questspace/web",
+    "test": "tsx --test packages/story/src/*.test.ts apps/api/src/*.test.ts",
+    "test:e2e": "playwright test",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "~19.2.0",
+    "@types/react-dom": "~19.2.0",
+    "concurrently": "^9.2.1",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.2"
+  }
+}
